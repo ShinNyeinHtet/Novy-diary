@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Moon+Dance&family=Zilla+Slab&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+.top-bar {
+  background-color: #354f52;
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons {
+  list-style-type: none;
+  display: flex;
+  padding-left: 39px;
+  padding-top: 5px;
+}
+li.social-icons-links {
+  padding-left: 19px;
+}
+.search {
+  position: relative;
+  padding-right: 26px;
+  padding-top: 5px;
+}
+.search > i {
+  position: absolute;
+  right: 33px;
+}
+#searching-place {
+  width: 220px;
+  border: #84a98c solid;
+  padding: 1px 16px;
+  background-color: #84a98c;
+}
+.nav-bar {
+  width: 98%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #84a98c;
+  border-radius: 15px;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.nav-bar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #2e6169;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.nav-bar ul li:hover::after {
+  width: 100%;
+}
